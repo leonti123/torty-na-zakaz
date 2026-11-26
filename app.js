@@ -162,5 +162,13 @@ form.addEventListener('submit', async e => {
     ok = (await r.json()).ok === true;
   } catch { /* fallback below offers VK chat */ }
   submit.disabled = false; submit.textContent = label;
+  if (ok) window.ym?.(114704759, 'reachGoal', 'lead');
   submit.hidden = ok; byId('sent').hidden = !ok; byId('fallback').hidden = ok;
+});
+
+// Переходы по контактам из любого блока страницы.
+document.addEventListener('click', event => {
+  if (event.target.closest('a[href^="tel:"], a[href^="https://vk.me/"], a[href^="https://max.ru/u/"]')) {
+    window.ym?.(114704759, 'reachGoal', 'contact');
+  }
 });
