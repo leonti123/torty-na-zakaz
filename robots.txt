@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://torty-saburovo.ru/sitemap.xml
