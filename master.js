@@ -1,5 +1,5 @@
 // Адрес развернутого веб-приложения Apps Script. Пустое значение включает демо.
-const MASTER_URL = "";
+const MASTER_URL = "https://script.google.com/macros/s/AKfycbxRxhM3iDIs12ElGgJm1InaL824Cc1FYtgeqcSog39RnDB6Zkb7fZ5qWTJHNjnBejAz/exec";
 const sections = {
   cat:'Товары', fmt:'Начинки', kg:'Цена за кг', gallery:'Галерея',
   reviews:'Отзывы', faq:'Вопросы и ответы', delivery:'Доставка', contacts:'Контакты', texts:'Тексты'

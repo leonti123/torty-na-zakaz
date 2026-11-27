@@ -280,7 +280,7 @@ async function openMaster() {
   if (!masterLoad) {
     const css = document.createElement('link');
     css.rel = 'stylesheet'; css.href = 'master.css?v=1'; document.head.append(css);
-    masterLoad = import('./master.js?v=1').catch(error => { masterLoad = null; throw error; });
+    masterLoad = import('./master.js?v=2').catch(error => { masterLoad = null; throw error; });
   }
   try { await siteReady; (await masterLoad).open(); }
   catch { alert('Панель не загрузилась. Проверьте связь и повторите вход.'); }
