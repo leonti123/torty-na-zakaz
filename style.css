@@ -297,3 +297,12 @@ dialog::backdrop{background:rgba(43,25,21,.6);backdrop-filter:blur(3px)}
 .hero:before{background-image:radial-gradient(circle,rgba(255,255,255,.75) 1.8px,transparent 2.2px),radial-gradient(circle,rgba(255,255,255,.55) 1.6px,transparent 2px);mask-image:none;opacity:1}
 .hero h1 em{background:linear-gradient(transparent 62%,#ffe066 62% 92%,transparent 92%);padding:0 .05em}
 .hero .lead{color:#4a2a2a}
+
+.applying-data body{visibility:hidden}
+.card[hidden],#submit[hidden]{display:none}
+.layers img{width:100%;height:100%;object-fit:cover}
+.f .price{display:block;margin:10px 20px 0}
+#reviewList:not([hidden]){display:grid;gap:16px;margin-top:20px}
+[data-phone],[data-group]{display:contents!important;color:inherit!important;font:inherit!important}
+.master-entry{margin:22px 0 0;font-size:13px}
+[data-tk],.card,.f,.rev-box,.faq,.d{overflow-wrap:anywhere}

@@ -9,14 +9,29 @@
 <link rel="preload" href="fonts/philosopher-n700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/mulish-n-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts/fonts.css?v=2">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='26' width='48' height='30' rx='8' fill='%23d7285a'/%3E%3Cpath d='M8 34c6 0 6 8 12 8s6-8 12-8 6 8 12 8 6-8 12-8v-2H8z' fill='%233a1f1a'/%3E%3Ccircle cx='32' cy='16' r='8' fill='%232bb5ae'/%3E%3C/svg%3E">
 <script>
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=114704759","ym");
 ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBounce:true});
 </script>
+<script>
+document.write('<script src="data.js?t=' + Math.floor(Date.now() / 60000) + '"><\/script>');
+</script>
 </head>
 <body>
+<script>
+try {
+  if (Object.keys(window.SITE_DATA || {}).length || sessionStorage.getItem('saburovo-published')) {
+    document.documentElement.classList.add('applying-data');
+    const show = () => document.documentElement.classList.remove('applying-data');
+    setTimeout(show, 4000);
+    window.addEventListener('load', () => {
+      try { if (typeof siteReady === 'undefined') show(); } catch { show(); }
+    }, {once:true});
+  }
+} catch {}
+</script>
 <noscript><img src="https://mc.yandex.ru/watch/114704759" width="1" height="1" alt=""></noscript>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <symbol id="drip" viewBox="0 0 1200 56" preserveAspectRatio="none"><path d="M0 0H1200V12H1110C1110 27.6 1108 26 1096 26C1084 26 1082 27.6 1082 12H1011C1011 25.8 1009 23 996 23C983 23 981 25.8 981 12H899C899 35.4 897 39 889 39C881 39 879 35.4 879 12H826C826 36 824 40 816 40C807 40 805 36 805 12H717C717 34.8 715 38 708 38C700 38 698 34.8 698 12H666C666 26.4 664 24 654 24C644 24 642 26.4 642 12H586C586 26.4 584 24 570 24C557 24 555 26.4 555 12H520C520 35.4 518 39 508 39C497 39 495 35.4 495 12H462C462 40.8 460 48 446 48C433 48 431 40.8 431 12H341C341 29.4 339 29 330 29C322 29 320 29.4 320 12H254C254 36 252 40 244 40C237 40 235 36 235 12H202C202 29.4 200 29 187 29C174 29 172 29.4 172 12H107C107 41.4 105 49 98 49C90 49 88 41.4 88 12H40C40 33 38 35 29 35C20 35 18 33 18 12H0Z"/></symbol>
@@ -30,44 +45,44 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
  <div class="wrap">
   <a class="logo" href="#top" aria-label="Торты на заказ, наверх">
    <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="20" width="38" height="22" rx="7" fill="#d7285a"/><path d="M5 26c5 0 5 7 9.5 7S19 26 24 26s5 7 9.5 7S38 26 43 26v-2H5z" fill="#3a1f1a"/><rect x="5" y="17" width="38" height="9" rx="4.5" fill="#3a1f1a"/><circle cx="14" cy="13" r="4.5" fill="#2bb5ae"/><circle cx="24" cy="10" r="5" fill="#d7285a"/><circle cx="34" cy="13" r="4.5" fill="#2bb5ae"/></svg>
-   <span>Торты на заказ<small>сладкие шедевры ручной работы</small></span>
+   <span><x-t data-tk="x-t145xxwn">Торты на заказ</x-t><small data-tk="smallkgl7z5">сладкие шедевры ручной работы</small></span>
   </a>
   <nav class="nav" aria-label="Разделы">
-   <a href="#menu">Каталог</a><a href="#fillings">Начинки</a><a href="#calc">Сколько торта</a><a href="#delivery">Доставка</a><a href="#faq">Вопросы</a>
+   <a href="#menu" data-tk="a1e9iw7f">Каталог</a><a href="#fillings" data-tk="awfguiw">Начинки</a><a href="#calc" data-tk="asvt5od">Сколько торта</a><a href="#delivery" data-tk="a4xi8g4">Доставка</a><a href="#faq" data-tk="al7nxr6">Вопросы</a>
   </nav>
-  <a class="btn btn-r" href="#order">Заказать торт</a>
+  <a class="btn btn-r" href="#order" data-tk="ab78rj3">Заказать торт</a>
   <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
  </div>
 </header>
 <nav class="mnav" id="mnav" hidden aria-label="Меню">
- <a href="#menu">Каталог</a><a href="#fillings">Начинки</a><a href="#calc">Сколько торта нужно</a><a href="#works">Работы</a><a href="#delivery">Доставка и оплата</a><a href="#faq">Вопросы</a><a href="#order">Заказать</a>
+ <a href="#menu" data-tk="a1e9iw7f_2">Каталог</a><a href="#fillings" data-tk="awfguiw_2">Начинки</a><a href="#calc" data-tk="a1t6j4nq">Сколько торта нужно</a><a href="#works" data-tk="a1dcpa43">Работы</a><a href="#delivery" data-tk="awemrdw">Доставка и оплата</a><a href="#faq" data-tk="al7nxr6_2">Вопросы</a><a href="#order" data-tk="a1wn5orl">Заказать</a>
 </nav>
 
 <main id="top">
 <section class="hero">
  <div class="wrap">
   <div>
-   <div class="kicker">Торты и капкейки на заказ · Москва, Москворечье-Сабурово</div>
-   <h1>Торты на заказ <em>в Москве</em></h1>
-   <p class="lead">Праздничные торты на дни рождения, юбилеи и любые торжества. Ягоды, макаронс, шоколадные подтёки, надписи и цифры. Делаем под ваш повод и вкус.</p>
+   <div class="kicker" data-tk="divjpyo9o">Торты и капкейки на заказ · Москва, Москворечье-Сабурово</div>
+   <h1><x-t data-tk="x-t145xxwn_2">Торты на заказ</x-t> <em data-tk="em1j177jd">в Москве</em></h1>
+   <p class="lead" data-tk="pck5off">Праздничные торты на дни рождения, юбилеи и любые торжества. Ягоды, макаронс, шоколадные подтёки, надписи и цифры. Делаем под ваш повод и вкус.</p>
    <div class="hero-cta">
-    <a class="btn btn-r" href="#order">Рассчитать и заказать</a>
-    <a class="btn btn-w" href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg>Написать в ВК</a>
-    <a class="btn btn-w" href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener"><svg><use href="#i-msg"/></svg>Написать в MAX</a>
-    <a class="btn btn-w" href="tel:+79663439819"><svg><use href="#i-phone"/></svg>8 966 343-98-19</a>
+    <a class="btn btn-r" href="#order" data-tk="a1jhw25m">Рассчитать и заказать</a>
+    <a class="btn btn-w" href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg><x-t data-tk="x-tpmtqoa">Написать в ВК</x-t></a>
+    <a class="btn btn-w" href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener"><svg><use href="#i-msg"/></svg><x-t data-tk="x-t1slmgqe">Написать в MAX</x-t></a>
+    <a class="btn btn-w" href="tel:+79663439819"><svg><use href="#i-phone"/></svg><span data-phone>8 966 343-98-19</span></a>
    </div>
    <div class="chips">
-    <div class="chip"><b>563</b><span>подписчика в ВК</span></div>
-    <div class="chip"><b>6</b><span>начинок на выбор</span></div>
-    <div class="chip"><b>2&nbsp;700&nbsp;₽</b><span>за кг торта, от</span></div>
-    <div class="chip"><b>от 6 шт</b><span>капкейки в коробке</span></div>
+    <div class="chip"><b data-tk="b3749jp">563</b><span data-tk="span14s8a1l">подписчика в ВК</span></div>
+    <div class="chip"><b data-tk="b3t03">6</b><span data-tk="span8ekgnp">начинок на выбор</span></div>
+    <div class="chip"><b data-kg>2&nbsp;700&nbsp;₽</b><span data-tk="spanstvyhh">за кг торта, от</span></div>
+    <div class="chip"><b data-tk="bcez2at">от 6 шт</b><span data-tk="span1nrj8mq">капкейки в коробке</span></div>
    </div>
   </div>
   <div class="hero-pics">
-   <div class="hp-main"><img src="img/chocolate-cake.webp" alt="Шоколадный торт с глазурью и розетками крема" fetchpriority="high"></div>
-   <div class="hp-a"><img src="img/cupcakes-raspberries.webp" alt="Шесть капкейков со светлым кремом и ягодами"></div>
-   <div class="hp-b"><img src="img/cupcakes-strawberries.webp" alt="Подарочный набор капкейков с клубникой"></div>
-   <div class="hp-tag"><b>Скидки</b>постоянным клиентам и акции к праздникам</div>
+   <div class="hp-main"><img data-ik="hero-main" src="img/chocolate-cake.webp" alt="Шоколадный торт с глазурью и розетками крема" fetchpriority="high"></div>
+   <div class="hp-a"><img data-ik="hero-a" src="img/cupcakes-raspberries.webp" alt="Шесть капкейков со светлым кремом и ягодами"></div>
+   <div class="hp-b"><img data-ik="hero-b" src="img/cupcakes-strawberries.webp" alt="Подарочный набор капкейков с клубникой"></div>
+   <div class="hp-tag"><b data-tk="b1cyyp68">Скидки</b><x-t data-tk="x-tgbjg7j">постоянным клиентам и акции к праздникам</x-t></div>
   </div>
  </div>
 </section>
@@ -75,29 +90,29 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
 <section class="ben" aria-label="Почему мы">
  <div class="drip top" style="color:var(--cream2)"><svg fill="currentColor"><use href="#drip"/></svg></div>
  <div class="wrap grid">
-  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg><div><b>Индивидуальный подход</b><span>Дизайн, надпись и начинка под ваш праздник</span></div></div>
-  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 3 6 6 6 9a6 6 0 0 1-12 0c0-3 2-6 6-9z"/><path d="M12 12v6"/></svg><div><b>Свежие продукты</b><span>Натуральные сливки, ягоды и шоколад</span></div></div>
-  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M6 21V11h12v10M9 11V8m3 3V6m3 5V8"/><circle cx="12" cy="4" r="1"/></svg><div><b>Профессиональный декор</b><span>Подтёки, ягоды, макаронс, цифры</span></div></div>
-  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="13" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><div><b>Доставка по Москве</b><span>Привезём аккуратно к нужному времени</span></div></div>
+  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg><div><b data-tk="b1dd60tf">Индивидуальный подход</b><span data-tk="span17wmqro">Дизайн, надпись и начинка под ваш праздник</span></div></div>
+  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 3 6 6 6 9a6 6 0 0 1-12 0c0-3 2-6 6-9z"/><path d="M12 12v6"/></svg><div><b data-tk="bnwcqkd">Свежие продукты</b><span data-tk="span1bd2wpn">Натуральные сливки, ягоды и шоколад</span></div></div>
+  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M6 21V11h12v10M9 11V8m3 3V6m3 5V8"/><circle cx="12" cy="4" r="1"/></svg><div><b data-tk="b1a7onz7">Профессиональный декор</b><span data-tk="span16257et">Подтёки, ягоды, макаронс, цифры</span></div></div>
+  <div class="ben-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="13" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><div><b data-tk="b1lwr1dn">Доставка по Москве</b><span data-tk="spanhcyta0">Привезём аккуратно к нужному времени</span></div></div>
  </div>
 </section>
 
 <section class="sec" id="menu">
  <div class="wrap">
   <div class="sec-head">
-   <div><div class="kicker">Каталог</div><h2>Что можно <em>заказать</em></h2></div>
+   <div><div class="kicker" data-tk="div1e9iw7f">Каталог</div><h2><x-t data-tk="x-toi88uh">Что можно</x-t> <em data-tk="emzddzup">заказать</em></h2></div>
    <div class="filters" role="group" aria-label="Фильтр">
-    <button class="on" data-f="all">Всё</button><button data-f="cake">Торты</button><button data-f="cup">Капкейки</button>
+    <button class="on" data-f="all" data-tk="button36i093">Всё</button><button data-f="cake" data-tk="button1h700ts">Торты</button><button data-f="cup" data-tk="button10qtjqc">Капкейки</button>
    </div>
   </div>
   <div class="cards" id="cards"></div>
-  <p class="note">Цены примерные: итог зависит от веса, начинки и декора. Точную сумму назовём после обсуждения.</p>
+  <p class="note" data-tk="pkti3un">Цены примерные: итог зависит от веса, начинки и декора. Точную сумму назовём после обсуждения.</p>
  </div>
 </section>
 
 <section class="sec fill" id="fillings">
  <div class="wrap">
-  <div class="sec-head"><div><div class="kicker">Начинки</div><h2>Шесть вкусов <em>внутри</em></h2></div><p class="lead">Любую начинку можно взять для торта любого дизайна. Не можете выбрать? Подскажем по поводу и количеству гостей.</p></div>
+  <div class="sec-head"><div><div class="kicker" data-tk="divwfguiw">Начинки</div><h2><x-t data-tk="x-t17jlldd">Шесть вкусов</x-t> <em data-tk="emkbxeab">внутри</em></h2></div><p class="lead" data-tk="p1veaeyn">Любую начинку можно взять для торта любого дизайна. Не можете выбрать? Подскажем по поводу и количеству гостей.</p></div>
   <div class="fgrid" id="fgrid"></div>
  </div>
 </section>
@@ -107,26 +122,26 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
  <div class="wrap sl">
   <div class="sl-vis">
    <svg id="cakeSvg" viewBox="0 0 400 400" role="img" aria-label="Торт, разделённый на кусочки"></svg>
-   <div class="sl-num"><div><b id="slN">12</b><span>кусочков</span></div></div>
+   <div class="sl-num"><div><b id="slN">12</b><span data-tk="spanz5lg36">кусочков</span></div></div>
   </div>
   <div>
-   <div class="kicker">Сколько торта нужно</div>
-   <h2>Режем торт <em>заранее</em></h2>
-   <p class="lead">Укажите число гостей, и мы покажем, сколько кусочков получится, какой нужен вес и примерную цену.</p>
+   <div class="kicker" data-tk="div1t6j4nq">Сколько торта нужно</div>
+   <h2><x-t data-tk="x-t1jj7pwx">Режем торт</x-t> <em data-tk="em167x98v">заранее</em></h2>
+   <p class="lead" data-tk="p4b501w">Укажите число гостей, и мы покажем, сколько кусочков получится, какой нужен вес и примерную цену.</p>
    <div class="sl-ctl">
-    <label for="guests">Гостей за столом <output id="gOut">12</output></label>
+    <label for="guests"><x-t data-tk="x-tdcrin8">Гостей за столом</x-t> <output id="gOut">12</output></label>
     <input type="range" id="guests" min="4" max="40" value="12" step="1">
-    <div class="sl-steps"><span>4</span><span>10</span><span>20</span><span>30</span><span>40</span></div>
+    <div class="sl-steps"><span data-tk="span3t01">4</span><span data-tk="span3hl44">10</span><span data-tk="span3hl53">20</span><span data-tk="span3hl5y">30</span><span data-tk="span3hkzl">40</span></div>
     <div class="seg" role="group" aria-label="Размер кусочка">
-     <button data-p="0.12">Чаепитие</button><button class="on" data-p="0.15">Обычный</button><button data-p="0.2">Сладкоежки</button>
+     <button data-p="0.12" data-tk="button35n8dr">Чаепитие</button><button class="on" data-p="0.15" data-tk="buttonwi91yh">Обычный</button><button data-p="0.2" data-tk="button1pqulb2">Сладкоежки</button>
     </div>
     <div class="sl-res">
-     <div><b id="rW">2 кг</b><span>вес торта</span></div>
-     <div><b id="rT">1 ярус</b><span>форма</span></div>
-     <div><b id="rP">от 5 400 ₽</b><span>цена торта</span></div>
+     <div><b id="rW">2 кг</b><span data-tk="span12o8s4t">вес торта</span></div>
+     <div><b id="rT">1 ярус</b><span data-tk="span1hsh4r7">форма</span></div>
+     <div><b id="rP">от 5 400 ₽</b><span data-tk="span1r8gk51">цена торта</span></div>
     </div>
-    <a class="btn btn-r" href="#order" id="calcOrder" style="width:100%">Заказать такой торт</a>
-    <p class="sl-hint">Расчёт по цене от 2 700 ₽ за кг. Точная цена зависит от начинки и декора торта.</p>
+    <a class="btn btn-r" href="#order" id="calcOrder" style="width:100%" data-tk="aazz0ls">Заказать такой торт</a>
+    <p class="sl-hint"><x-t data-tk="x-tieqih2">Расчёт по цене от</x-t> <span data-kg>2 700 ₽</span> <x-t data-tk="x-t3rs7wo">за кг. Точная цена зависит от начинки и декора торта.</x-t></p>
    </div>
   </div>
  </div>
@@ -134,26 +149,26 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
 
 <section class="sec" id="how">
  <div class="wrap">
-  <div class="sec-head"><div><div class="kicker">Как заказать</div><h2>Четыре шага до <em>праздника</em></h2></div></div>
+  <div class="sec-head"><div><div class="kicker" data-tk="div8v8i7l">Как заказать</div><h2><x-t data-tk="x-tdyqph6">Четыре шага до</x-t> <em data-tk="em1qzhe1y">праздника</em></h2></div></div>
   <div class="steps">
-   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-msg"/></svg><h3>Заявка</h3><p>Оставьте заявку на сайте, напишите в MAX или в сообщения группы ВКонтакте.</p></div>
-   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L19 8l-3-3L5 16z"/><path d="M14 7l3 3"/></svg><h3>Дизайн и вкус</h3><p>Обсуждаем повод, вес, начинку и декор. Можно прислать картинку-пример.</p></div>
-   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Готовим</h3><p>Печём к вашей дате из свежих продуктов, собираем и украшаем.</p></div>
-   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h11M10 7l5 5-5 5"/><path d="M15 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/></svg><h3>Получаете</h3><p>Доставка по Москве или самовывоз из Москворечья-Сабурова.</p></div>
+   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-msg"/></svg><h3 data-tk="h310kpjbp">Заявка</h3><p data-tk="p182s7i1">Оставьте заявку на сайте, напишите в MAX или в сообщения группы ВКонтакте.</p></div>
+   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L19 8l-3-3L5 16z"/><path d="M14 7l3 3"/></svg><h3 data-tk="h31gybm60">Дизайн и вкус</h3><p data-tk="pjp0h0k">Обсуждаем повод, вес, начинку и декор. Можно прислать картинку-пример.</p></div>
+   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3 data-tk="h31nfl0le">Готовим</h3><p data-tk="pbyyk1z">Печём к вашей дате из свежих продуктов, собираем и украшаем.</p></div>
+   <div class="step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h11M10 7l5 5-5 5"/><path d="M15 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/></svg><h3 data-tk="h3179g9gp">Получаете</h3><p data-tk="p9eui6e">Доставка по Москве или самовывоз из Москворечья-Сабурова.</p></div>
   </div>
  </div>
 </section>
 
 <section class="sec" id="works" style="padding-top:0">
  <div class="wrap">
-  <div class="sec-head"><div><div class="kicker">Работы</div><h2>Торты и <em>капкейки</em></h2></div><a class="btn btn-o" href="https://vk.ru/club243324667" target="_blank" rel="noopener" style="color:var(--rasp)">Все фото в ВК</a></div>
+  <div class="sec-head"><div><div class="kicker" data-tk="div1dcpa43">Работы</div><h2><x-t data-tk="x-t12kw9bc">Торты и</x-t> <em data-tk="em1tepft0">капкейки</em></h2></div><a class="btn btn-o" href="https://vk.ru/club243324667" target="_blank" rel="noopener" style="color:var(--rasp)" data-tk="a1nlkccf">Все фото в ВК</a></div>
   <div class="gal" id="gal"></div>
  </div>
 </section>
 
 <section class="sec dlv" id="delivery">
  <div class="wrap">
-  <div class="sec-head"><div><div class="kicker">Доставка и оплата</div><h2>Привезём <em>к столу</em></h2></div></div>
+  <div class="sec-head"><div><div class="kicker" data-tk="divwemrdw">Доставка и оплата</div><h2><x-t data-tk="x-t18cka8v">Привезём</x-t> <em data-tk="emledyxm">к столу</em></h2></div></div>
   <div class="dgrid">
    <div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="13" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><h3>Доставка</h3><ul><li>По Москве в выбранный интервал</li><li>Торт едет в коробке, в холоде</li><li>Стоимость зависит от адреса</li></ul></div>
    <div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>Самовывоз</h3><ul><li>Забрать можно в оговорённое время</li><li>Москворечье-Сабурово, точный адрес пришлём после заказа</li><li>Подскажем, как довезти торт</li></ul></div>
@@ -165,23 +180,24 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
 <section class="sec" id="reviews">
  <div class="wrap rev">
   <div class="rev-box">
-   <div class="kicker">Отзывы</div>
+   <div class="kicker" data-tk="divet04xo">Отзывы</div>
    <div class="stars" aria-hidden="true">★★★★★</div>
-   <h3>Как вам торт?</h3>
-   <p>Расскажите в нашей группе ВКонтакте, какую начинку вы выбрали и что понравилось вашим гостям.</p>
-   <a class="btn btn-o" href="https://vk.ru/club243324667" target="_blank" rel="noopener" style="color:var(--choc)">Оставить отзыв в группе</a>
+   <h3 data-tk="h3194zxqi">Как вам торт?</h3>
+   <p data-tk="p1htzxp5">Расскажите в нашей группе ВКонтакте, какую начинку вы выбрали и что понравилось вашим гостям.</p>
+   <a class="btn btn-o" href="https://vk.ru/club243324667" target="_blank" rel="noopener" style="color:var(--choc)" data-tk="a64t0jt">Оставить отзыв в группе</a>
   </div>
   <div class="rev-side">
-   <h3>Уже заказывали у нас?</h3>
-   <p>Пришлите фото торта на празднике в сообщения группы. Лучшие фото публикуем, а за отзыв дарим скидку на следующий заказ.</p>
-   <a class="btn btn-w" href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg>Написать в ВК</a>
+   <h3 data-tk="h315q7pd1">Уже заказывали у нас?</h3>
+   <p data-tk="ppkmku6">Пришлите фото торта на празднике в сообщения группы. Лучшие фото публикуем, а за отзыв дарим скидку на следующий заказ.</p>
+   <a class="btn btn-w" href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg><x-t data-tk="x-tpmtqoa_2">Написать в ВК</x-t></a>
   </div>
  </div>
+ <div class="wrap" id="reviewList" hidden></div>
 </section>
 
 <section class="sec" id="faq" style="padding-top:0">
  <div class="wrap">
-  <div class="sec-head" style="justify-content:center;text-align:center"><div><div class="kicker">Вопросы</div><h2>Часто <em>спрашивают</em></h2></div></div>
+  <div class="sec-head" style="justify-content:center;text-align:center"><div><div class="kicker" data-tk="divl7nxr6">Вопросы</div><h2><x-t data-tk="x-t1h3jukv">Часто</x-t> <em data-tk="em9qjuvp">спрашивают</em></h2></div></div>
   <div class="faq">
    <details><summary>За сколько дней нужно заказывать торт?</summary><p>Лучше за 3-5 дней, на выходные и праздники ещё раньше. Если торт нужен срочно, напишите в сообщения: проверим, есть ли свободное окно.</p></details>
    <details><summary>Можно сделать торт по моей картинке?</summary><p>Да. Пришлите фото-пример, и мы предложим похожий дизайн под ваш вес и начинку. Надпись, цифру или имя добавим без проблем.</p></details>
@@ -198,30 +214,30 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
  <div class="drip top" style="color:var(--cream)"><svg fill="currentColor"><use href="#drip"/></svg></div>
  <div class="wrap ord">
   <div>
-   <div class="kicker">Заказ</div>
-   <h2>Оставьте заявку</h2>
-   <p class="lead">Напишите дату и пожелания. Мы свяжемся с вами, уточним детали и назовём точную цену.</p>
+   <div class="kicker" data-tk="div1grk9j3">Заказ</div>
+   <h2 data-tk="h21eqfijm">Оставьте заявку</h2>
+   <p class="lead" data-tk="pmgdi1f">Напишите дату и пожелания. Мы свяжемся с вами, уточним детали и назовём точную цену.</p>
    <div class="contacts">
-    <a href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg><div>Сообщения группы ВКонтакте<span>Заказы принимаем в сообщения</span></div></a>
-    <a href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener"><svg><use href="#i-msg"/></svg><div>Написать в MAX<span>Обсудить заказ</span></div></a>
-    <a href="tel:+79663439819"><svg><use href="#i-phone"/></svg><div>8 966 343-98-19<span>Позвонить кондитеру</span></div></a>
-    <a href="https://vk.ru/club243324667" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4.2 1.6 4.6 4.5"/></svg><div>Группа «Торты на заказ»<span>Новые работы и акции</span></div></a>
+    <a href="https://vk.me/club243324667" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg><div><x-t data-tk="x-t1rbfcz0">Сообщения группы ВКонтакте</x-t><span data-tk="span1xbdg07">Заказы принимаем в сообщения</span></div></a>
+    <a href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener"><svg><use href="#i-msg"/></svg><div><x-t data-tk="x-t1slmgqe_2">Написать в MAX</x-t><span data-tk="span1bk8ky8">Обсудить заказ</span></div></a>
+    <a href="tel:+79663439819"><svg><use href="#i-phone"/></svg><div><span data-phone>8 966 343-98-19</span><span data-tk="span1lqrprp">Позвонить кондитеру</span></div></a>
+    <a href="https://vk.ru/club243324667" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4.2 1.6 4.6 4.5"/></svg><div><x-t data-tk="x-tyqtx3r">Группа «Торты на заказ»</x-t><span data-tk="spanlltrc8">Новые работы и акции</span></div></a>
    </div>
   </div>
   <form class="fl ym-hide-content" id="form" novalidate>
-   <label>Ваше имя<input name="name" id="fName" autocomplete="name" required></label>
-   <label>Телефон<input name="phone" id="fPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7" required></label>
-   <label>Что заказать<select id="fProduct"></select></label>
-   <label>Начинка<select id="fFilling"><option>Подскажите мне</option></select></label>
-   <label>Дата праздника<input type="date" id="fDate"></label>
-   <label>Гостей<input type="number" id="fGuests" min="1" max="200" inputmode="numeric"></label>
-   <label class="full">Пожелания по дизайну<textarea id="fComment" placeholder="Цвет, надпись, цифра, ягоды, доставка или самовывоз"></textarea></label>
+   <label><x-t data-tk="x-tyhpgtt">Ваше имя</x-t><input name="name" id="fName" autocomplete="name" required></label>
+   <label><x-t data-tk="x-t1105lob">Телефон</x-t><input name="phone" id="fPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7" required></label>
+   <label><x-t data-tk="x-t11c2l0a">Что заказать</x-t><select id="fProduct"></select></label>
+   <label><x-t data-tk="x-twfguio">Начинка</x-t><select id="fFilling"><option data-tk="option1sf11rq">Подскажите мне</option></select></label>
+   <label><x-t data-tk="x-tosjfcg">Дата праздника</x-t><input type="date" id="fDate"></label>
+   <label><x-t data-tk="x-t89c32f">Гостей</x-t><input type="number" id="fGuests" min="1" max="200" inputmode="numeric"></label>
+   <label class="full"><x-t data-tk="x-t4st7mz">Пожелания по дизайну</x-t><textarea id="fComment" placeholder="Цвет, надпись, цифра, ягоды, доставка или самовывоз"></textarea></label>
    <input class="hp" name="website" id="fWebsite" tabindex="-1" autocomplete="off" aria-hidden="true">
-   <label class="agree full"><input type="checkbox" id="fAgree" checked> Согласен на <a href="privacy.html" target="_blank" rel="noopener">обработку данных</a> для связи по заказу</label>
+   <label class="agree full"><input type="checkbox" id="fAgree" checked> <x-t data-tk="x-t19l8z6u">Согласен на</x-t> <a href="privacy.html" target="_blank" rel="noopener" data-tk="a1hdwmp0">обработку данных</a> <x-t data-tk="x-t1etmvri">для связи по заказу</x-t></label>
    <div class="err full" id="err" role="alert"></div>
-   <div class="full"><button class="btn btn-r" id="submit" type="submit">Отправить заявку</button></div>
-   <div class="ok full" id="sent" hidden>Спасибо, заявка принята! Скоро свяжемся с вами.</div>
-   <div class="fb full" id="fallback" hidden>Не получилось отправить заявку. Напишите нам в <a href="https://vk.me/club243324667" target="_blank" rel="noopener">сообщения группы ВКонтакте</a>, ответим там.</div>
+   <div class="full"><button class="btn btn-r" id="submit" type="submit" data-tk="buttonssuxsh">Отправить заявку</button></div>
+   <div class="ok full" id="sent" hidden data-tk="diviy9piw">Спасибо, заявка принята! Скоро свяжемся с вами.</div>
+   <div class="fb full" id="fallback" hidden><x-t data-tk="x-tg5dp13">Не получилось отправить заявку. Напишите нам в</x-t> <a href="https://vk.me/club243324667" target="_blank" rel="noopener" data-tk="a17wrqdo">сообщения группы ВКонтакте</a><x-t data-tk="x-t10gwyk4">, ответим там.</x-t></div>
   </form>
  </div>
 </section>
@@ -231,18 +247,19 @@ ym(114704759,"init",{webvisor:true,clickmap:true,trackLinks:true,accurateTrackBo
  <div class="drip top" style="color:#a81a44"><svg fill="currentColor"><use href="#drip"/></svg></div>
  <div class="wrap">
   <div class="ft">
-   <a class="logo" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="20" width="38" height="22" rx="7" fill="#d7285a"/><rect x="5" y="17" width="38" height="9" rx="4.5" fill="#fff7ef"/><circle cx="14" cy="13" r="4.5" fill="#2bb5ae"/><circle cx="24" cy="10" r="5" fill="#d7285a"/><circle cx="34" cy="13" r="4.5" fill="#2bb5ae"/></svg><span>Торты на заказ<small>сладкие шедевры ручной работы</small></span></a>
-   <div>Москва, Москворечье-Сабурово<br>Телефон: <a href="tel:+79663439819">8 966 343-98-19</a><br><a href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener">Написать в MAX</a><br>Заказы: <a href="https://vk.me/club243324667" target="_blank" rel="noopener">сообщения ВКонтакте</a><br>Группа: <a href="https://vk.ru/club243324667" target="_blank" rel="noopener">vk.ru/club243324667</a></div>
-   <div><a href="#menu">Каталог</a> · <a href="#fillings">Начинки</a> · <a href="#delivery">Доставка</a> · <a href="#order">Заказ</a></div>
+   <a class="logo" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="20" width="38" height="22" rx="7" fill="#d7285a"/><rect x="5" y="17" width="38" height="9" rx="4.5" fill="#fff7ef"/><circle cx="14" cy="13" r="4.5" fill="#2bb5ae"/><circle cx="24" cy="10" r="5" fill="#d7285a"/><circle cx="34" cy="13" r="4.5" fill="#2bb5ae"/></svg><span><x-t data-tk="x-t145xxwn_3">Торты на заказ</x-t><small data-tk="smallkgl7z5_2">сладкие шедевры ручной работы</small></span></a>
+   <div><x-t data-tk="x-t1ymrng0">Москва, Москворечье-Сабурово</x-t><br><x-t data-tk="x-tdm7xpd">Телефон:</x-t> <a href="tel:+79663439819"><span data-phone>8 966 343-98-19</span></a><br><a href="https://max.ru/u/f9LHodD0cOJwWjHxovNCDzY8B2bf6vn-MfQ-qfauGo-uVNNt6kenw4cKOT0" target="_blank" rel="noopener" data-tk="a1slmgqe">Написать в MAX</a><br><x-t data-tk="x-t1wt0pny">Заказы:</x-t> <a href="https://vk.me/club243324667" target="_blank" rel="noopener" data-tk="a8n98gn">сообщения ВКонтакте</a><br><x-t data-tk="x-tfmohpb">Группа:</x-t> <a href="https://vk.ru/club243324667" target="_blank" rel="noopener"><span data-group>vk.ru/club243324667</span></a></div>
+   <div><a href="#menu" data-tk="a1e9iw7f_3">Каталог</a> · <a href="#fillings" data-tk="awfguiw_3">Начинки</a> · <a href="#delivery" data-tk="a4xi8g4_2">Доставка</a> · <a href="#order" data-tk="a1grk9j3">Заказ</a></div>
   </div>
+  <p class="master-entry"><a href="#master" id="masterEntry">Вход для мастера</a></p>
  </div>
 </footer>
 
-<a class="btn btn-r fab" href="#order">Заказать</a>
+<a class="btn btn-r fab" href="#order" data-tk="a1wn5orl_2">Заказать</a>
 
-<dialog id="dlg"><button class="x" id="dlgX" aria-label="Закрыть">×</button><div class="dg"><img id="dImg" alt=""><div class="in"><span class="badge" id="dBadge" style="position:static;align-self:flex-start"></span><h3 id="dTitle"></h3><p id="dText"></p><ul id="dList"></ul><div class="price" id="dPrice"></div><button class="btn btn-r" id="dOrder">Заказать</button></div></div></dialog>
+<dialog id="dlg"><button class="x" id="dlgX" aria-label="Закрыть">×</button><div class="dg"><img id="dImg" alt=""><div class="in"><span class="badge" id="dBadge" style="position:static;align-self:flex-start"></span><h3 id="dTitle"></h3><p id="dText"></p><ul id="dList"></ul><div class="price" id="dPrice"></div><button class="btn btn-r" id="dOrder" data-tk="button1wn5orl">Заказать</button></div></div></dialog>
 <dialog id="lb" class="lb"><button class="x" id="lbX" aria-label="Закрыть">×</button><img id="lbImg" alt=""></dialog>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
